@@ -6,7 +6,7 @@ _Anton's Theme from scratch_
 
 - Users can access and edit a product carousel with images, titles, and prices
 - Users can make and edit a hero banner that can be edited via a JSON schema
-- Products should have individual cards
+- Products should have individual cards, taken from https://github.com/shopifypartners/product-csvs/blob/master/home-and-garden.csv
 - Be able to see a simple product page with images and add to cart funcionality
 - Mini-cart built with JS framework 
 
