@@ -12,3 +12,22 @@
         </form>
     {% endif %}
 </header>
+
+{% schema %}
+{
+    "name": "Header",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_search",
+            "label": "Show search form?",
+            "default": true
+        },
+        {
+            "type": "color",
+            "id": "background",
+            "label": "Background color",
+        },
+    ]
+}
+{% endschema %}

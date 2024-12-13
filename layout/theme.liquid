@@ -1,9 +1,12 @@
 <html>
 <head>
-{{ content_for_header }}
+    {{ content_for_header }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
 </head>
 <body>
-{{ content_for_layout }}
+    {% section 'header' %}
+    {{ content_for_layout }}
+    {{ 'scripts.js' | asset_url | script_tag }}
 </body>
 </html>
 
