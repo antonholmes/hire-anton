@@ -1,0 +1,18 @@
+{% paginate search.results by 5 %}
+    {% if search.performed %}
+        <h1>Search results</h1>
+        {% for result in search.results %}
+            {% if result.object_type == "page" %}
+                <a href="{{ result.url }}">{{ result.title }}</a>
+            {% elseif %}
+                <a href="{{ result.url }}">{{ result.title }}</a>
+            {% else %}
+                <a href="{{ result.url }}">{{ result.title }}</a>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <h1>Enter a search term</h1>
+    {% endif %}
+    
+    {{ paginate| default_pagination }}
+{% endpaginate %}
